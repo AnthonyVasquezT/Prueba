@@ -1,0 +1,22 @@
+Feature: Completación y Seguridad del registro
+Como madre, quiero que el proceso de registro sea ágil y sin complicaciones, 
+de modo que pueda asegurar una vacante o completar la matrícula 
+de forma rápida y sencilla.
+
+Scenario: El usuario observa un registro completo y seguro por parte del sitio web
+
+Dado que el “<usuario>” se encuentra en el menú principal
+activa el switch “<Registro de matrícula>”
+Cuando le da al botón de “<registrar>”
+Entonces la aplicación le mostrará “<Box>” de 
+un mensaje “Los datos del estudiante han sido registro”.
+
+Output:
+Box: Contiene Registro de matrícula y registrar
+
+Ejemplos:
+	|Variables|Funcionamiento App|
+  |Registro de matrícula|Selección de registro|
+  |Register|Boton de registro|
+  |Acept|Presionar opción "Aceptar"|
+  |Box|“Se ha activado la ubicación de su dispositivo”|
