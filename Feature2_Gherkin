@@ -1,0 +1,21 @@
+Feature: Opcion de Busqueda rápida
+	Como padre, quiero que la página web muestre los colegios 
+  más cercanos para que pueda elegir el más adecuado. 
+Scenario: El usuario quiere ver colegios cercanos
+
+Dado que el “<usuario>” se encuentra en el menú principal
+activa el switch de “<Localización>”
+  Cuando le da al botón de “<Aceptar>”
+  Entonces la aplicación le mostrará “<Box>” de un 
+  mensaje “Se ha activado la ubicación de su dispositivo”,
+  asimismo mostrará una lista de los colegios más cercanos que estén a su alcance.
+
+Output:
+Box: Contiene Localización y Aceptar
+
+Ejemplos:
+	|Variables|Funcionamiento App|
+  |Localización|Selección de opción "Locaclización"|
+  |Acept|Presionar opción "Aceptar"|
+  |Box|“Se ha activado la ubicación de su dispositivo”|
+	|List|Lista de colegios|
