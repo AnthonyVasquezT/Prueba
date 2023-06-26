@@ -1,2 +1,2 @@
-# Prueba
-Seh
+# Especificación
+SV32
