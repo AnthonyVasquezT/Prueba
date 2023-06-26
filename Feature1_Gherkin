@@ -1,0 +1,20 @@
+Feature: Obtener un registro de matrículas de manera rápida.
+	Como padre, quiero que las matriculas online sean rápidas y accesibles, 
+  para que mi hijo pueda estudiar.
+Scenario: El usuario busca disponibilidad de matrícula
+
+  Dado que el “<usuario>” se encuentra en el menú principal
+  activa el switch de “<Matrículas>”
+    Cuando le da al botón de “<Aceptar>”
+    Entonces la aplicación le mostrará “<Box>” de un mensaje “Colegios accesibles”, 
+    asimismo mostrará colegios con varias vacantes.
+
+Output:
+Box: Contiene Matrículas y Aceptar
+
+Ejemplos:
+	|Variables|Funcionamiento App|
+  |Matrículas|Selección de opción "Matriculas"|
+  |Aceptar|Presionar opción "Aceptar"|
+  |Box|“Colegios accesibles”|
+	|List|Lista de colegios|
