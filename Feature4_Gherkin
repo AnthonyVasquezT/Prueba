@@ -1,0 +1,22 @@
+Feature: Completación de registro
+Como usuario de “System of the Future” quiero registrarme con 
+los datos completos como el dni, apellidos, nombres, teléfono, entre otros.
+
+Scenario: El usuario necesita comprobar si el sitio web 
+exige un registro completo de datos.
+
+Dado que el “<usuario>” se encuentra en el menú principal
+activa el switch “<Registro>”
+Cuando le da al botón de “<Comenzar>”
+Entonces la aplicación le mostrará “<Box>” de un mensaje donde le pide que ingrese 
+sus datos personales de manera general.
+
+Output:
+Box: Contiene Registro y Comenzar
+
+Ejemplos:
+	|Variables|Funcionamiento App|
+  |Register|Boton de registro|
+  |Start|Boton de Comenzar
+  |Acept|Presionar opción "Aceptar"|
+  |Box|“Se ha activado la ubicación de su dispositivo”|
